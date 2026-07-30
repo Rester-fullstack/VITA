@@ -13,17 +13,11 @@ Sistema web completo para gerenciamento de clínicas e profissionais da saúde, 
 
 O projeto está disponível online.
 
-### Frontend (Vercel)
+🌍 **Frontend:** <https://vita-seven-kappa.vercel.app/>
 
-https://vita-seven-kappa.vercel.app/
+🚀 **API:** <https://vita-api-yzgt.onrender.com/>
 
-### Backend (Render)
-
-https://vita-api-yzgt.onrender.com/
-
-### Swagger
-
-https://vita-api-yzgt.onrender.com/swagger
+📄 **Swagger:** <https://vita-api-yzgt.onrender.com/swagger>
 ---
 
 # 🎯 Objetivo
