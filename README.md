@@ -1,10 +1,10 @@
 # 🏥 VITA - Sistema de Gestão Clínica Inteligente
 
-![.NET](https://img.shields.io/badge/.NET-8.0-512BD4?style=for-the-badge&logo=dotnet)
-![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react)
-![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript)
-![SQL Server](https://img.shields.io/badge/SQL%20Server-2022-CC2927?style=for-the-badge&logo=microsoftsqlserver)
-![JWT](https://img.shields.io/badge/JWT-Authentication-black?style=for-the-badge&logo=jsonwebtokens)
+![.NET](https://img.shields.io/badge/.NET-8-512BD4?logo=dotnet)
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript)
+![SQL Server](https://img.shields.io/badge/SQL%20Server-CC2927?logo=microsoftsqlserver)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 Sistema web completo para gerenciamento de clínicas e profissionais da saúde, desenvolvido utilizando **ASP.NET Core Web API (.NET 8)**, **React + TypeScript**, **SQL Server** e autenticação **JWT**.
 
