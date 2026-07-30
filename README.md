@@ -194,7 +194,7 @@ VITA
 │   ├── Data
 │   └── Program.cs
 │
-├── vita-project
+├── vite-project
 │   ├── src
 │   ├── components
 │   ├── pages
@@ -216,7 +216,7 @@ VITA
 Clone o projeto
 
 ```bash
-git clone https://github.com/SEU-USUARIO/VITA.git
+git clone https://github.com/Rester-fullstack/VITA.git
 
 cd VITA
 ```
@@ -319,6 +319,8 @@ https://github.com/Rester-fullstack
 - SQL Server.
 - JWT Authentication.
 
-# 📄 Licença
+---
 
-Este projeto foi desenvolvido para fins de estudo, aprendizado e demonstração de portfólio.
+## 📄 Licença
+
+Este projeto está licenciado sob a licença MIT. Consulte o arquivo LICENSE para mais informações.
