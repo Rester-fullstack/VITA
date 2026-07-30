@@ -13,11 +13,12 @@ Sistema web completo para gerenciamento de clínicas e profissionais da saúde, 
 
 O projeto está disponível online.
 
-🌍 **Frontend:** <https://vita-seven-kappa.vercel.app/>
+🌍 **Frontend:** https://vita-seven-kappa.vercel.app/
 
-🚀 **API:** <https://vita-api-yzgt.onrender.com/>
+🚀 **API:** https://vita-api-yzgt.onrender.com/
 
-📄 **Swagger:** <https://vita-api-yzgt.onrender.com/swagger>
+📄 **Swagger:** https://vita-api-yzgt.onrender.com/swagger
+
 ---
 
 # 🎯 Objetivo
@@ -42,13 +43,13 @@ Para executar o projeto completamente:
 4. Rode a API e o frontend localmente
 
 
-> **Observação**
->
-> O projeto utiliza **SQL Server** como banco de dados.
->
-> O frontend e a API estão publicados, porém as funcionalidades que dependem do banco de dados exigem uma instância de SQL Server acessível pela internet.
->
-> Para executar o sistema completamente, basta configurar a *Connection String* para um SQL Server e iniciar a aplicação localmente ou utilizar uma instância hospedada.
+## ℹ️ Ambiente de Demonstração
+
+O frontend e a API estão publicados para demonstração.
+
+Como o projeto utiliza SQL Server e não há uma instância pública configurada atualmente, algumas funcionalidades que dependem do banco de dados não estão disponíveis na versão online.
+
+Para executar o sistema completo, configure uma instância do SQL Server, ajuste a Connection String e execute a aplicação localmente.
 
 ---
 
