@@ -1,8 +1,6 @@
 services:
   - type: web
     name: vita-api
-    runtime: dotnet
+    runtime: docker
     rootDir: VitaApi
-    buildCommand: dotnet publish -c Release -o out
-    startCommand: dotnet out/VitaApi.dll
     plan: free
