@@ -8,6 +8,24 @@
 
 Sistema web completo para gerenciamento de clínicas e profissionais da saúde, desenvolvido utilizando **ASP.NET Core Web API (.NET 8)**, **React + TypeScript**, **SQL Server** e autenticação **JWT**.
 
+---
+## 🌐 Deploy
+
+O projeto está disponível online.
+
+### Frontend (Vercel)
+
+https://vita-seven-kappa.vercel.app/
+
+### Backend (Render)
+
+https://vita-api-yzgt.onrender.com/
+
+### Swagger
+
+https://vita-api-yzgt.onrender.com/swagger
+---
+
 # 🎯 Objetivo
 
 O VITA é uma plataforma SaaS desenvolvida para auxiliar profissionais da área da saúde na gestão completa de clínicas e consultórios.
@@ -37,6 +55,11 @@ O sistema permite controlar pacientes, consultas, exames, históricos clínicos,
 - Axios
 - React Router
 - CSS3
+
+### Deploy
+- Vercel (Frontend)
+- Render + Docker (API)
+- GitHub
 
 ---
 
@@ -318,6 +341,14 @@ https://github.com/Rester-fullstack
 - Frontend React + TypeScript.
 - SQL Server.
 - JWT Authentication.
+
+---
+
+## 🔗 Links
+
+- 🌍 Frontend: https://vita-seven-kappa.vercel.app/
+- 🔥 API: https://vita-api-yzgt.onrender.com/
+- 📄 Swagger: https://vita-api-yzgt.onrender.com/swagger
 
 ---
 
