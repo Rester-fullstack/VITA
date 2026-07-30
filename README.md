@@ -34,6 +34,30 @@ O sistema permite controlar pacientes, consultas, exames, históricos clínicos,
 
 ---
 
+## Banco de Dados
+
+O projeto utiliza SQL Server.
+
+Por questões de custo da hospedagem do SQL Server em nuvem, a API publicada possui acesso limitado ao banco de dados.
+
+Para executar o projeto completamente:
+
+1. Clone o repositório
+2. Configure a Connection String
+3. Execute as migrations
+4. Rode a API e o frontend localmente
+
+
+> **Observação**
+>
+> O projeto utiliza **SQL Server** como banco de dados.
+>
+> O frontend e a API estão publicados, porém as funcionalidades que dependem do banco de dados exigem uma instância de SQL Server acessível pela internet.
+>
+> Para executar o sistema completamente, basta configurar a *Connection String* para um SQL Server e iniciar a aplicação localmente ou utilizar uma instância hospedada.
+
+---
+
 # 🚀 Tecnologias
 
 ## Backend
