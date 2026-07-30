@@ -308,6 +308,17 @@ https://github.com/Rester-fullstack
 
 ---
 
+## 📦 Versões
+
+### v1.0.0
+
+- Primeira versão pública.
+- Sistema completo de gestão clínica.
+- Backend ASP.NET Core 8.
+- Frontend React + TypeScript.
+- SQL Server.
+- JWT Authentication.
+
 # 📄 Licença
 
 Este projeto foi desenvolvido para fins de estudo, aprendizado e demonstração de portfólio.
