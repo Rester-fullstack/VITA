@@ -1,0 +1,182 @@
+.sidebar{
+  width:260px;
+  height:100vh;
+
+  background:#171A21;
+
+  border-right:
+    1px solid rgba(255,255,255,0.04);
+
+  padding:30px 20px;
+
+  display:flex;
+  flex-direction:column;
+
+  position:relative;
+
+  z-index:1000;
+
+  transition:0.3s;
+}
+
+.top{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+
+  margin-bottom:50px;
+}
+
+.logo{
+  font-size:24px;
+  font-weight:600;
+
+  letter-spacing:4px;
+}
+
+.close-btn{
+  display:none;
+
+  background:none;
+  border:none;
+
+  color:white;
+
+  cursor:pointer;
+}
+
+nav{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+nav a{
+  height:50px;
+
+  color:#AAB4C5;
+  text-decoration:none;
+
+  display:flex;
+  align-items:center;
+  gap:12px;
+
+  padding:0 16px;
+
+  border-radius:14px;
+
+  transition:0.3s;
+}
+
+nav a:hover{
+  background:rgba(255,255,255,0.04);
+
+  color:white;
+
+  transform:translateX(4px);
+}
+
+nav a.active{
+  background:rgba(124,142,163,0.12);
+
+  color:white;
+
+  border:
+    1px solid rgba(124,142,163,0.2);
+}
+
+.mobile-menu{
+  display:none;
+
+  position:fixed;
+
+  top:20px;
+  left:20px;
+
+  width:46px;
+  height:46px;
+
+  border:none;
+
+  border-radius:14px;
+
+  background:#171A21;
+
+  color:white;
+
+  z-index:1200;
+
+  cursor:pointer;
+}
+
+.overlay{
+  position:fixed;
+
+  inset:0;
+
+  background:rgba(0,0,0,0.5);
+
+  backdrop-filter:blur(4px);
+
+  z-index:900;
+}
+
+@media(max-width:900px){
+
+  .mobile-menu{
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+  }
+
+  .close-btn{
+    display:block;
+  }
+
+  .sidebar{
+    position:fixed;
+
+    left:-100%;
+
+    top:0;
+  }
+
+  .sidebar.open{
+    left:0;
+  }
+}
+
+.logout-btn{
+  margin-top:auto;
+
+  height:50px;
+
+  background:none;
+  border:none;
+
+  color:#AAB4C5;
+
+  display:flex;
+  align-items:center;
+  gap:12px;
+
+  padding:0 16px;
+
+  border-radius:14px;
+
+  cursor:pointer;
+
+  transition:0.3s;
+
+  font-size:14px;
+}
+
+.logout-btn:hover{
+  background:rgba(255,255,255,0.04);
+
+  color:white;
+
+  transform:translateX(4px);
+}
+

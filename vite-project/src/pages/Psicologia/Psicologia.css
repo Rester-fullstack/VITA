@@ -1,0 +1,196 @@
+.psicologia-page{
+  display:flex;
+  flex-direction:column;
+  gap:24px;
+}
+
+.psicologia-header h1{
+  font-size:32px;
+  font-weight:700;
+  color:white;
+}
+
+.psicologia-header p{
+  margin-top:6px;
+  color:#94A3B8;
+}
+
+.psicologia-layout{
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  gap:24px;
+}
+
+.psicologia-form-card,
+.psicologia-summary-card,
+.psicologia-history{
+  background:#171A21;
+  border:1px solid rgba(255,255,255,.05);
+  border-radius:24px;
+  padding:24px;
+}
+
+.psicologia-form-card h2,
+.psicologia-summary-card h2,
+.psicologia-history h2{
+  font-size:20px;
+  font-weight:700;
+  color:white;
+  margin-bottom:20px;
+}
+
+.psicologia-form-card{
+  display:flex;
+  flex-direction:column;
+}
+
+.psicologia-form-card label{
+  color:#CBD5E1;
+  font-size:14px;
+  margin-bottom:8px;
+  margin-top:10px;
+}
+
+.psicologia-form-card input,
+.psicologia-form-card select,
+.psicologia-form-card textarea{
+  width:100%;
+  background:#0F172A;
+  border:1px solid rgba(255,255,255,.08);
+  color:white;
+  border-radius:14px;
+  padding:14px;
+  outline:none;
+}
+
+.psicologia-form-card textarea{
+  min-height:95px;
+  resize:none;
+}
+
+.psicologia-form-card input:focus,
+.psicologia-form-card select:focus,
+.psicologia-form-card textarea:focus{
+  border-color:#2563EB;
+}
+
+.psicologia-form-card button{
+  margin-top:20px;
+  height:48px;
+  border:none;
+  border-radius:14px;
+  background:#2563EB;
+  color:white;
+  font-weight:700;
+  cursor:pointer;
+  transition:.25s;
+}
+
+.psicologia-form-card button:hover{
+  background:#1D4ED8;
+  transform:translateY(-2px);
+}
+
+.summary-item{
+  background:#0F172A;
+  border:1px solid rgba(255,255,255,.06);
+  border-radius:18px;
+  padding:18px;
+  margin-bottom:14px;
+}
+
+.summary-item span{
+  display:block;
+  color:#94A3B8;
+  font-size:13px;
+  margin-bottom:8px;
+}
+
+.summary-item strong{
+  color:white;
+  font-size:22px;
+}
+
+.sessao-item{
+  background:#0F172A;
+  border:1px solid rgba(255,255,255,.06);
+  border-radius:20px;
+  padding:20px;
+  margin-bottom:16px;
+}
+
+.sessao-top{
+  display:flex;
+  justify-content:space-between;
+  gap:16px;
+  margin-bottom:16px;
+}
+
+.sessao-top strong{
+  display:block;
+  color:white;
+  font-size:17px;
+  margin-bottom:6px;
+}
+
+.sessao-top span{
+  color:#94A3B8;
+  font-size:13px;
+}
+
+.sessao-top small{
+  height:max-content;
+  padding:7px 12px;
+  border-radius:999px;
+  background:rgba(168,85,247,.15);
+  color:#C084FC;
+  font-weight:700;
+  font-size:12px;
+}
+
+.sessao-content{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.sessao-content p{
+  color:#CBD5E1;
+  line-height:1.6;
+}
+
+.sessao-content b{
+  color:white;
+}
+
+.sessao-item button{
+  margin-top:16px;
+  border:none;
+  background:#DC2626;
+  color:white;
+  padding:10px 14px;
+  border-radius:12px;
+  cursor:pointer;
+  font-weight:700;
+  transition:.2s;
+}
+
+.sessao-item button:hover{
+  background:#B91C1C;
+}
+
+.empty{
+  text-align:center;
+  color:#94A3B8;
+  padding:40px;
+}
+
+@media(max-width:900px){
+  .psicologia-layout{
+    grid-template-columns:1fr;
+  }
+
+  .sessao-top{
+    flex-direction:column;
+  }
+}

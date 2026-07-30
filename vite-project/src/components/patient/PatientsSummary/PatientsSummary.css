@@ -1,0 +1,49 @@
+.patient-summary-grid{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:18px;
+  margin-bottom:30px;
+}
+
+.patient-summary-card{
+  background:#111827;
+  border:1px solid rgba(255,255,255,.06);
+  border-radius:20px;
+  padding:20px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.summary-icon{
+  width:42px;
+  height:42px;
+  border-radius:14px;
+  background:rgba(37,99,235,.18);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:22px;
+}
+
+.patient-summary-card span{
+  color:#94a3b8;
+  font-size:14px;
+}
+
+.patient-summary-card strong{
+  color:white;
+  font-size:28px;
+}
+
+@media(max-width:900px){
+  .patient-summary-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media(max-width:520px){
+  .patient-summary-grid{
+    grid-template-columns:1fr;
+  }
+}

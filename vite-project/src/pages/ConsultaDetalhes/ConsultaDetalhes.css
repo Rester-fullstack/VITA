@@ -1,0 +1,1027 @@
+.consulta-detalhes{
+  max-width:1200px;
+  margin:0 auto;
+  padding:32px;
+}
+
+.consulta-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  margin-bottom:24px;
+}
+
+.consulta-title{
+  font-size:34px;
+  font-weight:700;
+  margin-bottom:8px;
+}
+
+.consulta-subtitle{
+  color:#94A3B8;
+}
+
+.patient-card{
+  background:#171A21;
+  border:1px solid rgba(255,255,255,.05);
+  border-radius:24px;
+  padding:22px;
+  margin-bottom:24px;
+
+  display:flex;
+  align-items:center;
+  gap:18px;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,.25);
+}
+
+.patient-avatar{
+  width:70px;
+  height:70px;
+
+  border-radius:20px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  font-size:28px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #2563EB,
+      #4F46E5
+    );
+}
+
+.patient-card h2{
+  font-size:22px;
+  margin-bottom:4px;
+}
+
+.patient-card span{
+  color:#94A3B8;
+}
+
+.consulta-info-grid{
+  display:grid;
+
+  grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+  gap:20px;
+
+  margin-bottom:28px;
+}
+
+.info-card{
+  background:#171A21;
+
+  border:1px solid rgba(255,255,255,.05);
+
+  border-radius:24px;
+
+  padding:24px;
+
+  transition:.25s;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,.25);
+}
+
+.info-card:hover{
+  transform:translateY(-3px);
+
+  border-color:
+    rgba(59,130,246,.25);
+}
+
+.info-card span{
+  display:block;
+
+  font-size:13px;
+
+  color:#94A3B8;
+
+  margin-bottom:10px;
+}
+
+.info-card strong{
+  font-size:20px;
+  font-weight:600;
+}
+
+.observacoes-card,
+.prontuario-card,
+.exames-card{
+  background:#171A21;
+
+  border:1px solid rgba(255,255,255,.05);
+
+  border-radius:24px;
+
+  padding:28px;
+
+  margin-bottom:24px;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,.25);
+}
+
+.observacoes-card h3,
+.prontuario-card h3,
+.exames-card h3{
+  font-size:20px;
+  font-weight:700;
+  color:white;
+  margin-bottom:20px;
+}
+
+.observacoes-card p{
+  color:#CBD5E1;
+  line-height:1.7;
+}
+
+.status-badge{
+  display:inline-flex;
+
+  align-items:center;
+  justify-content:center;
+
+  padding:8px 16px;
+
+  border-radius:999px;
+
+  font-size:13px;
+  font-weight:600;
+}
+
+.status-badge.agendada{
+  background:rgba(59,130,246,.15);
+  color:#60A5FA;
+}
+
+.status-badge.confirmada{
+  background:rgba(34,197,94,.15);
+  color:#4ADE80;
+}
+
+.status-badge.cancelada{
+  background:rgba(239,68,68,.15);
+  color:#F87171;
+}
+
+.status-badge.finalizada{
+  background:rgba(168,85,247,.15);
+  color:#C084FC;
+}
+
+.prontuario-input,
+.exames-card input,
+.exames-card textarea{
+
+  width:100%;
+
+  background:#0F172A;
+
+  border:1px solid rgba(255,255,255,.08);
+
+  color:white;
+
+  border-radius:16px;
+
+  padding:14px;
+
+  font-size:15px;
+
+  margin-bottom:14px;
+}
+
+.prontuario-input{
+  min-height:120px;
+  resize:none;
+}
+
+.prontuario-input::placeholder,
+.exames-card input::placeholder,
+.exames-card textarea::placeholder{
+  color:#64748B;
+}
+
+.historico-list{
+  margin-top:24px;
+
+  display:flex;
+  flex-direction:column;
+
+  gap:14px;
+}
+
+.historico-item{
+  background:#0F172A;
+
+  border:1px solid rgba(255,255,255,.06);
+
+  border-radius:18px;
+
+  padding:18px;
+}
+
+.historico-item span{
+  display:block;
+
+  color:#64748B;
+
+  font-size:12px;
+
+  margin-bottom:10px;
+}
+
+.historico-item p{
+  color:#E2E8F0;
+  line-height:1.6;
+}
+
+.exames-list{
+  margin-top:24px;
+
+  display:flex;
+  flex-direction:column;
+
+  gap:14px;
+}
+
+.exame-item{
+  background:#0F172A;
+
+  border:1px solid rgba(255,255,255,.06);
+
+  border-radius:18px;
+
+  padding:18px;
+}
+
+.exame-top{
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  margin-bottom:10px;
+}
+
+.exame-top h4{
+  color:white;
+
+  margin:0;
+
+  font-size:18px;
+
+  font-weight:600;
+}
+
+.exame-top span{
+  color:#64748B;
+
+  font-size:12px;
+}
+
+.exame-item p{
+  color:#CBD5E1;
+
+  margin-top:10px;
+
+  line-height:1.6;
+}
+
+.exame-item a{
+  display:inline-flex;
+
+  margin-top:14px;
+
+  color:#60A5FA;
+
+  text-decoration:none;
+
+  font-weight:600;
+}
+
+.exame-item a:hover{
+  text-decoration:underline;
+}
+
+.actions{
+  display:flex;
+
+  gap:16px;
+
+  flex-wrap:wrap;
+}
+
+.btn-primary,
+.btn-secondary,
+.btn-success,
+.btn-danger{
+
+  height:48px;
+
+  padding:0 24px;
+
+  border:none;
+
+  border-radius:14px;
+
+  font-weight:600;
+
+  cursor:pointer;
+
+  transition:.25s;
+}
+
+.btn-primary{
+  background:#2563EB;
+  color:white;
+}
+
+.btn-primary:hover{
+  transform:translateY(-2px);
+}
+
+.btn-success{
+  background:#16A34A;
+  color:white;
+}
+
+.btn-success:hover{
+  transform:translateY(-2px);
+}
+
+.btn-danger{
+  background:#DC2626;
+  color:white;
+}
+
+.btn-danger:hover{
+  transform:translateY(-2px);
+}
+
+.btn-secondary{
+  background:#1E293B;
+  color:white;
+}
+
+.loading{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  min-height:300px;
+}
+
+.not-found{
+  text-align:center;
+  padding:60px;
+  color:#94A3B8;
+}
+
+@media(max-width:768px){
+
+  .consulta-detalhes{
+    padding:20px;
+  }
+
+  .consulta-header{
+    flex-direction:column;
+    gap:16px;
+  }
+
+  .consulta-title{
+    font-size:28px;
+  }
+
+  .actions{
+    flex-direction:column;
+  }
+
+  .btn-primary,
+  .btn-success,
+  .btn-danger,
+  .btn-secondary{
+    width:100%;
+  }
+}
+
+.receitas-card{
+  background:#171A21;
+  border:1px solid rgba(255,255,255,.05);
+  border-radius:24px;
+  padding:28px;
+  margin-bottom:24px;
+  width:100%;
+}
+
+.receitas-card h3{
+  font-size:20px;
+  font-weight:700;
+  color:white;
+  margin-bottom:20px;
+}
+
+.receitas-card input,
+.receitas-card textarea{
+  width:100%;
+  min-height:110px;
+  background:#0F172A;
+  border:1px solid rgba(255,255,255,.08);
+  color:white;
+  border-radius:16px;
+  padding:14px;
+  font-size:15px;
+  margin-bottom:14px;
+  resize:none;
+}
+
+.receitas-card textarea::placeholder{
+  color:#64748B;
+}
+
+.receitas-list{
+  margin-top:24px;
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
+
+.receita-item{
+  background:#0F172A;
+  border:1px solid rgba(255,255,255,.06);
+  border-radius:18px;
+  padding:18px;
+}
+
+.receita-item strong{
+  display:block;
+  color:white;
+  font-size:17px;
+  margin-bottom:8px;
+}
+
+.receita-item span{
+  display:block;
+  color:#94A3B8;
+  font-size:13px;
+  margin-bottom:10px;
+}
+
+.receita-item p{
+  color:#E2E8F0;
+  line-height:1.6;
+  margin-bottom:10px;
+}
+
+.receita-item small{
+  display:block;
+  color:#CBD5E1;
+  line-height:1.5;
+}
+
+.atestados-card{
+  background:#171A21;
+  border:1px solid rgba(255,255,255,.05);
+  border-radius:24px;
+  padding:28px;
+  margin-bottom:24px;
+  width:100%;
+}
+
+.atestados-card h3{
+  font-size:20px;
+  font-weight:700;
+  color:white;
+  margin-bottom:20px;
+}
+
+.atestados-card textarea,
+.atestados-card input{
+  width:100%;
+  background:#0F172A;
+  border:1px solid rgba(255,255,255,.08);
+  color:white;
+  border-radius:16px;
+  padding:14px;
+  font-size:15px;
+  margin-bottom:14px;
+}
+
+.atestados-card textarea{
+  min-height:110px;
+  resize:none;
+}
+
+.atestados-card textarea::placeholder,
+.atestados-card input::placeholder{
+  color:#64748B;
+}
+
+.atestados-list{
+  margin-top:24px;
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
+
+.atestado-item{
+  background:#0F172A;
+  border:1px solid rgba(255,255,255,.06);
+  border-radius:18px;
+  padding:18px;
+}
+
+.atestado-item strong{
+  display:block;
+  color:white;
+  font-size:17px;
+  margin-bottom:8px;
+}
+
+.atestado-item span{
+  display:block;
+  color:#94A3B8;
+  font-size:13px;
+  margin-bottom:10px;
+}
+
+.atestado-item p{
+  color:#E2E8F0;
+  line-height:1.6;
+  margin-bottom:10px;
+}
+
+.atestado-item small{
+  display:block;
+  color:#CBD5E1;
+  margin-bottom:10px;
+}
+
+.pdf-link{
+  margin-top:12px;
+
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+
+  border:none;
+  cursor:pointer;
+
+  background:#DC2626;
+  color:white;
+
+  padding:10px 16px;
+
+  border-radius:12px;
+
+  font-size:14px;
+  font-weight:600;
+
+  transition:.2s;
+}
+
+.pdf-link:hover{
+  background:#B91C1C;
+  transform:translateY(-2px);
+}
+
+.document-actions{
+  display:flex;
+  gap:10px;
+  margin-top:12px;
+}
+
+.btn-pdf,
+.btn-delete{
+  height:38px;
+  padding:0 14px;
+
+  border:none;
+  border-radius:10px;
+
+  cursor:pointer;
+
+  font-size:13px;
+  font-weight:600;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  transition:.2s;
+}
+
+.btn-pdf{
+  background:#2563EB;
+  color:white;
+}
+
+.btn-pdf:hover{
+  background:#1D4ED8;
+}
+
+.btn-delete{
+  background:#DC2626;
+  color:white;
+}
+
+.btn-delete:hover{
+  background:#B91C1C;
+}
+
+.timeline-card{
+  background:#171A21;
+  border:1px solid rgba(255,255,255,.05);
+  border-radius:24px;
+  padding:28px;
+  margin-bottom:24px;
+  box-shadow:0 10px 30px rgba(0,0,0,.25);
+}
+
+.timeline-card h3{
+  font-size:20px;
+  font-weight:700;
+  color:white;
+  margin-bottom:24px;
+}
+
+.timeline-list{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+
+.timeline-item{
+  display:flex;
+  gap:16px;
+  position:relative;
+}
+
+.timeline-icon{
+  width:46px;
+  height:46px;
+  min-width:46px;
+  border-radius:14px;
+  background:#0F172A;
+  border:1px solid rgba(255,255,255,.08);
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  font-size:22px;
+}
+
+.timeline-content{
+  flex:1;
+  background:#0F172A;
+  border:1px solid rgba(255,255,255,.06);
+  border-radius:18px;
+  padding:18px;
+}
+
+.timeline-top{
+  display:flex;
+  justify-content:space-between;
+  gap:14px;
+  margin-bottom:8px;
+}
+
+.timeline-top strong{
+  color:white;
+  font-size:16px;
+}
+
+.timeline-top span{
+  color:#94A3B8;
+  font-size:12px;
+  white-space:nowrap;
+}
+
+.timeline-content small{
+  display:inline-flex;
+  margin-bottom:10px;
+  padding:5px 10px;
+  border-radius:999px;
+  background:rgba(37,99,235,.15);
+  color:#60A5FA;
+  font-size:12px;
+  font-weight:600;
+}
+
+.timeline-content p{
+  color:#CBD5E1;
+  line-height:1.6;
+}
+
+.timeline-empty{
+  color:#94A3B8;
+  text-align:center;
+  padding:20px;
+}
+
+@media(max-width:768px){
+  .timeline-top{
+    flex-direction:column;
+  }
+
+  .timeline-top span{
+    white-space:normal;
+  }
+}
+
+.receita-item,
+.atestado-item{
+  position:relative;
+  overflow:hidden;
+}
+
+.receita-item::before,
+.atestado-item::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:0;
+  width:5px;
+  height:100%;
+}
+
+.receita-item::before{
+  background:#22C55E;
+}
+
+.atestado-item::before{
+  background:#F59E0B;
+}
+
+.document-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:12px;
+  margin-bottom:12px;
+}
+
+.document-header strong{
+  margin-bottom:0;
+}
+
+.document-badge{
+  padding:6px 10px;
+  border-radius:999px;
+  font-size:12px;
+  font-weight:700;
+}
+
+.document-badge.receita{
+  background:rgba(34,197,94,.15);
+  color:#4ADE80;
+}
+
+.document-badge.atestado{
+  background:rgba(245,158,11,.15);
+  color:#FBBF24;
+}
+
+.document-actions{
+  display:flex;
+  gap:10px;
+  margin-top:14px;
+  flex-wrap:wrap;
+}
+
+.btn-pdf,
+.btn-delete{
+  height:38px;
+  padding:0 14px;
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+  font-size:13px;
+  font-weight:600;
+  transition:.2s;
+}
+
+.btn-pdf{
+  background:#2563EB;
+  color:white;
+}
+
+.btn-pdf:hover{
+  background:#1D4ED8;
+  transform:translateY(-2px);
+}
+
+.btn-delete{
+  background:#DC2626;
+  color:white;
+}
+
+.btn-delete:hover{
+  background:#B91C1C;
+  transform:translateY(-2px);
+}
+
+.btn-danger{
+  background:#DC2626;
+  color:white;
+  border:none;
+  border-radius:12px;
+  padding:12px 18px;
+  font-weight:700;
+  cursor:pointer;
+  transition:.2s;
+}
+
+.btn-danger:hover{
+  background:#B91C1C;
+  transform:translateY(-2px);
+}
+
+.solicitacoes-section{
+  margin-bottom:28px;
+  padding-bottom:26px;
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.section-header-inline{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  margin-bottom:18px;
+}
+
+.section-header-inline p{
+  color:#94a3b8;
+  margin-top:4px;
+}
+
+.solicitacoes-list{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    margin-top:18px;
+}
+
+.solicitacao-item{
+    background:linear-gradient(
+        180deg,
+        #1b2433 0%,
+        #141b26 100%
+    );
+
+    border:1px solid rgba(255,255,255,.06);
+
+    border-radius:20px;
+
+    padding:22px;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.22);
+
+    transition:.25s ease;
+}
+
+.solicitacao-item:hover{
+    transform:translateY(-3px);
+
+    border-color:#3b82f6;
+
+    box-shadow:
+        0 16px 35px rgba(59,130,246,.15);
+}
+
+.solicitacao-item>span{
+    display:block;
+
+    margin:12px 0;
+
+    color:#94a3b8;
+
+    font-size:13px;
+
+    font-weight:500;
+}
+
+.solicitacao-item p{
+    color:#e5e7eb;
+
+    line-height:1.7;
+
+    margin:10px 0;
+}
+
+.solicitacao-item small{
+    display:block;
+
+    margin-top:12px;
+
+    color:#94a3b8;
+
+    font-size:13px;
+}
+
+.solicitacao-exames{
+    margin-top:12px;
+
+    padding:16px;
+
+    background:#0f172a;
+
+    border:1px solid rgba(255,255,255,.05);
+
+    border-radius:14px;
+
+    color:#f8fafc;
+
+    white-space:pre-wrap;
+
+    font-size:14px;
+
+    line-height:1.7;
+}
+
+.document-actions{
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:12px;
+
+    margin-top:18px;
+}
+
+.btn-pdf,
+.btn-delete{
+    height:42px;
+
+    padding:0 18px;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.25s;
+}
+
+.btn-pdf{
+    background:#2563eb;
+    color:#fff;
+}
+
+.btn-pdf:hover{
+    background:#1d4ed8;
+}
+
+.btn-delete{
+    background:#dc2626;
+    color:#fff;
+}
+
+.btn-delete:hover{
+    background:#b91c1c;
+}
+.declaracoes-list{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+  margin-top:18px;
+}
+
+.declaracao-item{
+  background:linear-gradient(180deg,#1b2433 0%,#141b26 100%);
+  border:1px solid rgba(255,255,255,.06);
+  border-radius:20px;
+  padding:22px;
+}
+
+.declaracao-item > span{
+  display:block;
+  color:#94a3b8;
+  margin:12px 0;
+  font-size:13px;
+}
+
+.declaracao-item small{
+  display:block;
+  color:#94a3b8;
+  margin-top:8px;
+}
+
+
+
+    

@@ -1,0 +1,55 @@
+.audit-timeline{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+
+.audit-item{
+  display:flex;
+  gap:16px;
+  align-items:flex-start;
+  padding-bottom:18px;
+  border-bottom:1px solid rgba(255,255,255,.05);
+}
+
+.audit-item:last-child{
+  border:none;
+  padding-bottom:0;
+}
+
+.audit-icon{
+  width:52px;
+  height:52px;
+  border-radius:16px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:22px;
+  flex-shrink:0;
+}
+
+.audit-content{
+  display:flex;
+  flex-direction:column;
+}
+
+.audit-content strong{
+  color:white;
+  font-size:15px;
+}
+
+.audit-content span{
+  color:#CBD5E1;
+  margin-top:4px;
+}
+
+.audit-content small{
+  color:#64748B;
+  margin-top:6px;
+}
+
+.empty{
+  color:#94A3B8;
+  text-align:center;
+  padding:30px;
+}

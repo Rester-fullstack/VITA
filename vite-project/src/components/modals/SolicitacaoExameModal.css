@@ -1,0 +1,69 @@
+.solicitacao-modal{
+  width:min(760px, 95%);
+  max-height:90vh;
+  overflow:auto;
+  background:#0f172a;
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:22px;
+  padding:28px;
+  color:white;
+}
+
+.solicitacao-modal h2{
+  margin-bottom:6px;
+  font-size:26px;
+}
+
+.solicitacao-modal p{
+  color:#94a3b8;
+  margin-bottom:20px;
+}
+
+.exames-grid{
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  gap:12px;
+  margin-bottom:22px;
+}
+
+.exame-check{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  background:#111827;
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:14px;
+  padding:12px;
+  cursor:pointer;
+}
+
+.exame-check input{
+  width:16px;
+  height:16px;
+}
+
+.solicitacao-modal label{
+  display:block;
+  margin:14px 0 8px;
+  color:#cbd5e1;
+  font-weight:600;
+}
+
+.solicitacao-modal textarea{
+  width:100%;
+  min-height:90px;
+  resize:vertical;
+  border:none;
+  border-radius:14px;
+  padding:14px;
+  background:#020617;
+  color:white;
+  outline:none;
+}
+
+.modal-actions{
+  display:flex;
+  justify-content:flex-end;
+  gap:12px;
+  margin-top:22px;
+}

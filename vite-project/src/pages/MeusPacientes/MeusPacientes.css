@@ -1,0 +1,159 @@
+.meus-pacientes-page{
+  display:flex;
+  flex-direction:column;
+  gap:24px;
+}
+
+.page-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.title{
+  font-size:34px;
+  font-weight:700;
+  color:white;
+  margin-bottom:6px;
+}
+
+.subtitle{
+  color:#94A3B8;
+}
+
+.search-box{
+  background:#171A21;
+  border:1px solid rgba(255,255,255,.05);
+  border-radius:20px;
+  padding:18px;
+}
+
+.search-box input{
+  width:100%;
+  height:48px;
+  background:#0F172A;
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:14px;
+  padding:0 16px;
+  color:white;
+  outline:none;
+}
+
+.search-box input::placeholder{
+  color:#64748B;
+}
+
+.search-box input:focus{
+  border-color:#2563EB;
+}
+
+.table-container{
+  width:100%;
+  overflow:auto;
+  background:#171A21;
+  border-radius:24px;
+  padding:20px;
+  border:1px solid rgba(255,255,255,.05);
+  box-shadow:0 10px 30px rgba(0,0,0,.25);
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+}
+
+thead{
+  background:#0F172A;
+}
+
+th{
+  text-align:left;
+  padding:16px;
+  color:#94A3B8;
+  font-size:13px;
+  font-weight:700;
+}
+
+td{
+  padding:18px 16px;
+  border-bottom:1px solid rgba(255,255,255,.05);
+  color:#E2E8F0;
+}
+
+tbody tr{
+  transition:.2s;
+}
+
+tbody tr:hover{
+  background:rgba(255,255,255,.03);
+}
+
+.actions{
+  display:flex;
+  gap:10px;
+}
+
+.view-btn,
+.edit-btn{
+  height:36px;
+  padding:0 14px;
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+  font-size:13px;
+  font-weight:700;
+  transition:.2s;
+}
+
+.view-btn{
+  background:#2563EB;
+  color:white;
+}
+
+.view-btn:hover{
+  background:#1D4ED8;
+  transform:translateY(-2px);
+}
+
+.edit-btn{
+  background:#F59E0B;
+  color:white;
+}
+
+.edit-btn:hover{
+  background:#D97706;
+  transform:translateY(-2px);
+}
+
+.empty-state{
+  text-align:center;
+  color:#94A3B8;
+  padding:40px;
+}
+
+.loading{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:300px;
+  color:#94A3B8;
+  font-size:18px;
+}
+
+@media(max-width:768px){
+
+  .page-header{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:16px;
+  }
+
+  .actions{
+    flex-direction:column;
+  }
+
+  .view-btn,
+  .edit-btn{
+    width:100%;
+  }
+}

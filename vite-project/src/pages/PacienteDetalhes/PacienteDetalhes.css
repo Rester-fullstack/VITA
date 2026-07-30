@@ -1,0 +1,151 @@
+.paciente-detalhes{
+  padding:32px;
+  color:white;
+}
+
+.loading,
+.not-found{
+  min-height:60vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#94a3b8;
+  font-size:18px;
+}
+
+.tab-section h2,
+.records-list h2,
+.document-column h2{
+  margin-bottom:18px;
+  font-size:22px;
+}
+
+.evolucao-input{
+  width:100%;
+  min-height:140px;
+  background:#020617;
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:16px;
+  padding:16px;
+  color:white;
+  resize:vertical;
+  outline:none;
+  margin-bottom:16px;
+}
+
+.evolucao-input:focus{
+  border-color:#2563eb;
+}
+
+.records-list{
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+}
+
+.record-item{
+  background:linear-gradient(
+    180deg,
+    #1b2433,
+    #111827
+  );
+  border:1px solid rgba(255,255,255,.06);
+  border-radius:18px;
+  padding:18px;
+}
+
+.record-item strong{
+  display:block;
+  font-size:16px;
+  margin-bottom:8px;
+}
+
+.record-item span,
+.record-item small{
+  display:block;
+  color:#94a3b8;
+  font-size:13px;
+  margin-bottom:8px;
+}
+
+.record-item p{
+  color:#d1d5db;
+  line-height:1.6;
+  margin-bottom:8px;
+}
+
+.empty{
+  color:#94a3b8;
+  background:#0f172a;
+  border:1px solid rgba(255,255,255,.06);
+  border-radius:16px;
+  padding:28px;
+  text-align:center;
+}
+
+.documents-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:24px;
+}
+
+.document-column{
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+}
+
+.small-btn{
+  margin-top:10px;
+  height:38px;
+  padding:0 14px;
+  border:none;
+  border-radius:10px;
+  background:#2563eb;
+  color:white;
+  cursor:pointer;
+  font-weight:600;
+  transition:.25s;
+}
+
+.small-btn:hover{
+  background:#1d4ed8;
+  transform:translateY(-1px);
+}
+
+.pdf-link{
+  display:inline-flex;
+  margin-top:8px;
+  color:#93c5fd;
+  text-decoration:none;
+  font-weight:600;
+}
+
+.pdf-link:hover{
+  text-decoration:underline;
+}
+
+.btn-primary{
+  height:46px;
+  padding:0 20px;
+  border:none;
+  border-radius:12px;
+  background:#2563eb;
+  color:white;
+  cursor:pointer;
+  font-weight:600;
+}
+
+.btn-primary:hover{
+  background:#1d4ed8;
+}
+
+@media(max-width:900px){
+  .paciente-detalhes{
+    padding:20px;
+  }
+
+  .documents-grid{
+    grid-template-columns:1fr;
+  }
+}

@@ -1,0 +1,148 @@
+.exame-modal-overlay{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.7);
+  backdrop-filter:blur(8px);
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  z-index:5000;
+  padding:20px;
+}
+
+.exame-modal{
+  width:100%;
+  max-width:520px;
+
+  background:#171A21;
+
+  border:
+    1px solid rgba(255,255,255,0.06);
+
+  border-radius:24px;
+
+  padding:28px;
+
+  box-shadow:
+    0 25px 60px rgba(0,0,0,0.45);
+
+  animation:
+    exameFade 0.2s ease;
+}
+
+.exame-modal h2{
+  font-size:22px;
+  font-weight:600;
+
+  margin-bottom:24px;
+
+  color:#FFF;
+}
+
+.exame-form-group{
+  display:flex;
+  flex-direction:column;
+
+  gap:8px;
+
+  margin-bottom:18px;
+}
+
+.exame-form-group label{
+  font-size:14px;
+  color:#AAB4C5;
+}
+
+.exame-form-group input,
+.exame-form-group select,
+.exame-form-group textarea{
+  width:100%;
+
+  background:#1E232D;
+
+  border:
+    1px solid transparent;
+
+  border-radius:14px;
+
+  padding:14px 16px;
+
+  color:#FFF;
+
+  outline:none;
+
+  transition:0.2s;
+}
+
+.exame-form-group textarea{
+  min-height:110px;
+  resize:none;
+}
+
+.exame-form-group input:focus,
+.exame-form-group select:focus,
+.exame-form-group textarea:focus{
+  border-color:#4F7CFF;
+  background:#222836;
+}
+
+.exame-modal-actions{
+  display:flex;
+  justify-content:flex-end;
+
+  gap:12px;
+
+  margin-top:24px;
+}
+
+.exame-modal-actions button{
+  height:46px;
+
+  border:none;
+
+  border-radius:14px;
+
+  padding:0 22px;
+
+  cursor:pointer;
+
+  font-weight:600;
+
+  transition:0.2s;
+}
+
+.exame-modal-actions button:hover{
+  transform:translateY(-2px);
+}
+
+.exame-cancel-btn{
+  background:#252B36;
+  color:#AAB4C5;
+}
+
+.exame-save-btn{
+  background:
+    linear-gradient(
+      135deg,
+      #4F7CFF,
+      #6A5CFF
+    );
+
+  color:#FFF;
+}
+
+@keyframes exameFade{
+  from{
+    opacity:0;
+    transform:
+      scale(0.96);
+  }
+
+  to{
+    opacity:1;
+    transform:
+      scale(1);
+  }
+}

@@ -1,0 +1,46 @@
+.patient-tabs-card{
+  margin-top:30px;
+  background:#111827;
+  border:1px solid rgba(255,255,255,.06);
+  border-radius:22px;
+  overflow:hidden;
+}
+
+.patient-tabs-header{
+  display:flex;
+  gap:8px;
+  padding:16px;
+  border-bottom:1px solid rgba(255,255,255,.06);
+  overflow-x:auto;
+}
+
+.tab-btn{
+  min-width:max-content;
+  height:42px;
+  padding:0 16px;
+  border:none;
+  border-radius:12px;
+  background:transparent;
+  color:#94a3b8;
+  font-weight:600;
+  cursor:pointer;
+  transition:.25s;
+}
+
+.tab-btn span{
+  margin-right:8px;
+}
+
+.tab-btn:hover{
+  background:rgba(255,255,255,.05);
+  color:white;
+}
+
+.tab-btn.active{
+  background:#2563eb;
+  color:white;
+}
+
+.patient-tabs-content{
+  padding:24px;
+}

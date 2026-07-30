@@ -1,0 +1,150 @@
+.agenda-medico-page{
+  display:flex;
+  flex-direction:column;
+  gap:24px;
+}
+
+.page-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.title{
+  font-size:32px;
+  font-weight:700;
+  color:white;
+}
+
+.subtitle{
+  color:#94A3B8;
+  margin-top:6px;
+}
+
+.agenda-grid{
+  display:grid;
+  grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+
+.agenda-card{
+  background:#171A21;
+  border:1px solid rgba(255,255,255,.05);
+  border-radius:20px;
+  padding:22px;
+  box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.agenda-card span{
+  color:#94A3B8;
+  font-size:14px;
+}
+
+.agenda-card strong{
+  color:white;
+  font-size:34px;
+}
+
+.agenda-card.destaque{
+  border-color:#2563EB;
+}
+
+.agenda-section{
+  background:#171A21;
+  border:1px solid rgba(255,255,255,.05);
+  border-radius:24px;
+  padding:24px;
+}
+
+.agenda-section h2{
+  color:white;
+  margin-bottom:20px;
+}
+
+.agenda-item{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  padding:18px;
+  margin-bottom:12px;
+
+  background:#0F172A;
+  border-radius:16px;
+
+  transition:.2s;
+}
+
+.agenda-item:hover{
+  transform:translateY(-2px);
+}
+
+.agenda-item strong{
+  display:block;
+  color:white;
+  margin-bottom:6px;
+}
+
+.agenda-item span{
+  display:block;
+  color:#CBD5E1;
+  font-size:14px;
+  margin-bottom:4px;
+}
+
+.agenda-item small{
+  color:#94A3B8;
+}
+
+.agenda-item button{
+  height:40px;
+  padding:0 18px;
+
+  border:none;
+  border-radius:12px;
+
+  background:#2563EB;
+  color:white;
+
+  font-weight:600;
+  cursor:pointer;
+
+  transition:.2s;
+}
+
+.agenda-item button:hover{
+  background:#1D4ED8;
+}
+
+.empty{
+  color:#94A3B8;
+}
+
+.loading{
+  min-height:300px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  color:#94A3B8;
+}
+
+@media(max-width:768px){
+
+  .agenda-item{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:12px;
+  }
+
+  .agenda-item button{
+    width:100%;
+  }
+
+}

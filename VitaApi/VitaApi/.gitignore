@@ -1,0 +1,40 @@
+﻿# Visual Studio
+.vs/
+
+# Build
+bin/
+obj/
+
+# User files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider
+.idea/
+
+# VS Code
+.vscode/
+
+# NuGet
+*.nupkg
+
+# Logs
+*.log
+
+# ASP.NET User Secrets
+secrets.json
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# Publish
+publish/
+
+# ASP.NET Core
+appsettings.Local.json
